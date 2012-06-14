@@ -1,6 +1,7 @@
-<h1>Listing posts</h1>
+<div class="hero-unit">
+<h2>Listing posts</h2>
 
-<table>
+<table class="table table-grip">
   <tr>
     <th>Name</th>
     <th>Title</th>
@@ -15,13 +16,15 @@
     <td><%= post.name %></td>
     <td><%= post.title %></td>
     <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', post, :class => "btn btn-info" %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) , :class => "btn btn-primary"%></td>
+    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :class => "btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path, :class => "btn btn-primary btn-large" %>
+<%= link_to 'Home',home_index_path,:class => "btn btn-large btn-primary" %>
+</div>
