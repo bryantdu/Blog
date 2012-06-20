@@ -8,7 +8,7 @@ gem 'bootstrap-will_paginate'
 # gem 'rails', :git => 'git://github.com/rails/rails.gitnstall
 gem 'activerecord-postgresql-adapter'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'json'
 
