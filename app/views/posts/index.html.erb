@@ -1,3 +1,4 @@
+<% notice %>
 <div class="hero-unit">
 <h2>Listing posts</h2>
 
@@ -13,7 +14,7 @@
 
 <% @posts.each do |post| %>
   <tr>
-    <td><%= post.name %></td>
+    <td><%= link_to post.name, post %></td>
     <td><%= post.title %></td>
     <td><%= post.content %></td>
     <td><%= link_to 'Show', post, :class => "btn btn-info" %></td>
