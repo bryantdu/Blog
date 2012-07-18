@@ -1,0 +1,4 @@
+<% @types.each do |t| %>
+<%= t.item_type %><br/>
+<% end %>
+<%= link_to 'New',new_type_path, :class => 'btn btn-primary' %>
